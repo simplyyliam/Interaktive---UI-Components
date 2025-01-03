@@ -13,6 +13,7 @@ export function SideBar ({onComponent}: SideBarProps): JSX.Element {
         
             <div className="p-2">
                 <Button Name="Increment" onClick={() => onComponent('Increment')}/>
+                <Button Name="Task Widget" onClick={() => onComponent('Task')}/>
 
             </div>
         </div>

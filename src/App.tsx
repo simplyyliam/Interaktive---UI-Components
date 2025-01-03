@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SideBar } from "./Components/SideBar";
 import { Increment } from "./UI components/Increment";
+import { Task } from "./UI components/Task";
 
 
 export default function App () {
@@ -10,9 +11,9 @@ export default function App () {
 
   const openComponent = (componentID: string) => {
     setComponent(componentID)
-    if (Component) {
-        setComponent(null)
-    }
+    // if (Component) {
+    //     setComponent(null)
+    // }
   }
 
   return (
@@ -23,6 +24,11 @@ export default function App () {
             {Component == 'Increment' && (
               <div className="flex flex-col items-center">
                 <Increment name="Increment"/>
+              </div>
+            )}
+            {Component == 'Task' && (
+              <div className="flex flex-col items-center">
+                <Task name="Task Widget"/>
               </div>
             )}
         </div>

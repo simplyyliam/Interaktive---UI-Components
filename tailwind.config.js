@@ -16,8 +16,8 @@ export default {
       height: {
         'sidebar': '878px',
         'previewScreen': '878px',
-        'md.sidebar': '921px',
-        'md.previewScreen': '921px',
+        'md.sidebar': '782px',
+        'md.previewScreen': '788px',
         'container': '921px',
       },
 
